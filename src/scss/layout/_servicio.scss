@@ -1,0 +1,24 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenido-servicio{
+    h1{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+.servicios-detalles{
+    .detalles-Interfaces, .detalles-frontend-backend, .detalles-aplicacion-escritorio, .detalles-DB, .detalles-seguridad {
+        list-style-type: none;
+        h3{
+            margin: 2rem 0 1rem 0;
+        } 
+    }
+
+    .detalle{
+        margin-left: 4.5rem;
+        @include m.tablet {
+            font-size: 2rem ;   
+        }
+    }  
+}

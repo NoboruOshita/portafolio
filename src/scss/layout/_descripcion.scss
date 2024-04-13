@@ -1,0 +1,31 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.contenedor-descripcion{
+
+    a{
+        color: blue;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &:hover{
+            color: v.$morado;
+        }
+    }
+
+    img{
+        margin: 3rem 0;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+    .descripcion{
+        text-align: justify;
+        @include m.tablet{
+            margin: 1.5rem 7rem;
+        }
+    }
+}

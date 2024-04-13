@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenedor-portafolio{
+    h1{
+        text-align: center;
+    }
+
+    img{
+        overflow: hidden;
+        &:hover{
+            transform: scale(1.1);
+            opacity: 0.6;
+        }
+    }
+
+    h4{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contenedor-portafolio__listas{
+        padding: 0;
+        @include m.tablet{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 90px;
+        }
+        li{
+            list-style-type: none;
+        }
+    }
+    .descripcion{
+        margin: 0;
+    }
+
+    .creditovehicular, .huaycosos, 
+    .bienesraices, .festivalmusical,
+    .lphuaycosos{
+        margin-bottom: 2rem;
+    }
+}
+
